@@ -68,9 +68,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         subtitle: Text(
                           'Sorti en : ${movie['release_date']}',
                           textAlign: TextAlign.center,
-                          style: TextStyle(
-                            
-                          ),
+                          
                         ),
                         onTap: () {
                           Navigator.pushNamed(context, '/details',

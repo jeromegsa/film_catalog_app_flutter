@@ -1,4 +1,4 @@
-// services/api_service.dart
+
 import 'dart:convert';
 import 'package:http/http.dart' as http;
 
@@ -7,7 +7,7 @@ class ApiService {
   final String baseUrl = 'https://api.themoviedb.org/3';
 
   Future<List<dynamic>> fetchMovies() async {
-    final url = Uri.parse('$baseUrl/movie/popular?api_key=$apiKey&language=en-US&page=1');
+    final url = Uri.parse('$baseUrl/movie/popular?api_key=$apiKey&language=en-US&page=2');
     final response = await http.get(url);
 
     if (response.statusCode == 200) {
